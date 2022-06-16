@@ -7,16 +7,16 @@ for (let i = 1; i <= 100; i++) {
 
    let fizz = i % 3 == 0;
    let buzz = i % 5 == 0;
-   let fizzBuzz = ((fizz == true) && (buzz == true));
+   let fizzBuzz = ((fizz) && (buzz));
 
-   if ((fizz == true) && (buzz == false)) {
-      console.log("Fizz");
-   } else if ((buzz == true) && (fizz == false)) {
-      console.log("Buzz");
-   } else if (fizzBuzz == true) {
+   if (fizzBuzz) {
       console.log("FizzBuzz");
+   } else if (fizz) {
+      console.log("Fizz");
+   } else if (buzz) {
+      console.log("Buzz");
    } else {
       console.log(i);
    }
-   
+
 }
