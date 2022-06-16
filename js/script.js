@@ -18,13 +18,13 @@ for (let i = 1; i <= 100; i++) {
    let fizzBuzz = ((fizz) && (buzz));
 
    if (fizzBuzz) {
-      console.log('FizzBuzz');
+      boxWrapper.innerHTML = 'FizzBuzz' ;
    } else if (fizz) {
-      console.log('Fizz');
+      boxWrapper.innerHTML = 'Fizz';
    } else if (buzz) {
-      console.log('Buzz');
+      boxWrapper.innerHTML = 'Buzz';
    } else {
-      console.log(i);
+      boxWrapper.innerHTML = i;
    }
 
 }
