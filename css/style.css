@@ -1,0 +1,20 @@
+body {
+   background-color: #002b7d;
+}
+
+.col-2 {
+   background-color: rgba(255,255,255,.3);
+   box-shadow: 0px 6px 12px -1px rgba(0,0,0,.4);
+}
+
+.fizz-box {
+   background-color: #b2adf4;
+}
+
+.buzz-box {
+   background-color: #9dcff0;
+}
+
+.fizz-buzz-box {
+   background-color: #9df0c5;
+}

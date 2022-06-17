@@ -9,20 +9,24 @@ for (let i = 1; i <= 100; i++) {
    // create a div
    const boxWrapper = document.createElement('div');
    // add col-2 class to boxWrapper
-   boxWrapper.classList.add('col-3');
+   boxWrapper.classList.add('col-2', 'text-center', 'text-white', 'm-2', 'px-3', 'py-5');
    // append boxWrapper in the row #fizz-buzz-wrapper
    fizzbuzzContainer.append(boxWrapper);
 
+   
    let fizz = i % 3 == 0;
    let buzz = i % 5 == 0;
    let fizzBuzz = ((fizz) && (buzz));
 
    if (fizzBuzz) {
-      boxWrapper.innerHTML = 'FizzBuzz' ;
+      boxWrapper.innerHTML = 'FizzBuzz';
+      boxWrapper.classList.add('fizz-buzz-box');
    } else if (fizz) {
       boxWrapper.innerHTML = 'Fizz';
+      boxWrapper.classList.add('fizz-box');
    } else if (buzz) {
       boxWrapper.innerHTML = 'Buzz';
+      boxWrapper.classList.add('buzz-box');
    } else {
       boxWrapper.innerHTML = i;
    }
